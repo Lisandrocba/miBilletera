@@ -1,0 +1,132 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(SL-051919-20420-09.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contenedorHeader{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.Total{
+    font-size: 2rem;
+}
+
+.contenedorIngresos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    background-color: rgb(127, 250, 56);
+    border-radius: 10PX;
+    padding: 0 4%;
+    margin: 1% 0 2% 0; 
+}
+
+.contenedorEgresos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    background-color: rgb(255, 56, 59);
+    border-radius: 10PX;
+    padding: 0 4%;
+}
+
+.contenedorDescripcion{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedorGrilla{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: rgb(201, 201, 201, 0.6);
+    padding: 0 5% 2% 5%;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.fila:hover .iconoCerrar{
+    color: black;
+}
+
+.tituloVerde{
+    color: rgb(127, 250, 56);
+    font-size: 2rem;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.tituloRojo{
+    color: rgb(255, 56, 59);
+    text-shadow: 0.1em 0.1em 0.1em black;
+    font-size: 2rem;
+}
+
+.contFila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.iconoCerrar{
+    margin-top: 1%;
+    font-size: 22px;
+    display: none;
+    background: transparent;
+    border: none;
+}
+
+.contFila:hover .iconoCerrar { display: block; }
+
+.forma{
+    background-color: rgba(206, 204, 204, 0.659);
+    padding: 5%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select{
+    border: none;
+    padding: 1% 2%;
+}
+
+.descripcion{
+    border: none;
+    padding: 1% 2%;
+    width: 40%;
+}
+
+.monto{
+    border: none;
+    padding: 1% 2%;
+    width: 10%;
+}
+
+.btnValor{
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    color: black;
+}

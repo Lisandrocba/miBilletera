@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Document</title>
+  </head>
+  <body onload="cargarApp()">
+    <div class="contenedorHeader">
+      <h1 class="titulo">PRESUPUESTO DISPONIBLE</h1>
+      <div class="Total" id="total">8000</div>
+
+      <div class="contenedorIngresos">
+        <h2 class="subtitulo">Ingresos</h2>
+        <div class="totalIngreso" id="totalIngresos">$4500</div>
+      </div>
+
+      <div class="contenedorEgresos">
+        <h2 class="subtitulo">Egresos</h2>
+        <div class="totalIngresos" id="totalEgreso">-$6000</div>
+      </div>
+    </div>
+
+    <div>
+      <form action="" class="forma" id="forma" onsubmit="return false">
+        <select id="tipo" class="select">
+          <option value="ingreso" selected>+</option>
+          <option value="egreso">-</option>
+        </select>
+        <input type="text" class="descripcion" placeholder="Agregar Descripcion" id="descripcion">
+        <input type="number" class="monto" placeholder="$" id="valor" step="any">
+        <button class="btnValor" onclick="agregarValor()"><ion-icon name="checkmark-circle-outline"></ion-icon></button>
+      </form>
+    </div>
+
+    <div class="contenedorDescripcion">
+      <div class="contenedorGrilla">
+        <div>
+          <h3 class="tituloVerde">Ingresos</h3>
+        </div>
+        <div id="listaIngreso" class="contTotal">
+          <!-- se llama lista de ingresos por js -->
+        </div>
+      </div>
+      <div class="contenedorGrilla">
+        <div>
+          <h3 class="tituloRojo">Egreso</h3>
+        </div>
+        <div id="listaEgresos" class="contTotal">
+          <!-- se llama lista de egresos por js -->
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>    
+
+    <script src="datos.js"></script>
+    <script src="egresos.js"></script>
+    <script src="ingresos.js"></script>
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+  </body>
+</html>
